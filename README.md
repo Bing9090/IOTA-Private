@@ -339,20 +339,20 @@ IOTADataOperator.py —— IOTA私链的主要操作
 	|-- findTransactions function: 根据tag查询所有对应交易
 iotaParams.py —— 配置Seed和首地址
 
-### 4.1 生成一个可用地址
+### 4.2 生成一个可用地址
 ```
 # generate a address
 iotaDataOperator = IOTADataOperator()
 iotaDataOperator.generateAddress(seed, 0)
 ```
 
-### 4.2 发送一笔交易
+### 4.3 发送一笔交易
 ```
 # send a trans
 iotaDataOperator.sendTransaction("hello world", "TEST")
 ```
 
-### 4.3 利用tag查询一笔交易
+### 4.4 利用tag查询一笔交易
 ```
 # find trans
 transMsgs = iotaDataOperator.findTransactions("TEST")
